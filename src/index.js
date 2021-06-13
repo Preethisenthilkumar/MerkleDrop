@@ -634,7 +634,7 @@ const App = {
             "type": "function"
           }
         ],
-        "0x59b1147067496629B543A2b0d68e439bC585c345",
+        "0x00168A8b9a79654bFDc749418f2fC199f783be68",
       );
 
       // get accounts
