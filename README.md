@@ -12,5 +12,6 @@ provided to the Merkle Drop Smart Contract in order for an Eligible Party to Cla
 Step 1 - confirming if an Ethereum address is an Eligible Party Ethereum address: If the Ethereum address is an Eligible Party Ethereum address, 
         the Merkle Proof will automatically be generated. If the Ethereum address is not an Eligible Party Ethereum address a corresponding notification 
         will be presented.
+        
 Step 2 - Submitting the Merkle Proof to the Merkle Drop Smart Contract: you will be able to Claim tokens directly  by using a web3 provider such as Metamask. 
          If a Merkle Proof is successfully generated, the tokens can be claimed.
