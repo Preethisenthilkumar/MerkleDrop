@@ -10,8 +10,8 @@ provided to the Merkle Drop Smart Contract in order for an Eligible Party to Cla
 ## Implementation
 
 Given a file containing the mapping of addresses to balances, build a Merkle tree using merklejs. Fetch the merkle root and generate proof for each 
-set of address and balances for verification, which will initialise the balances for users to claim. This proof is basically a route to the 
-address/balance pair in the merkle tree. 
+set of address and balances for verification. On verification the tokens for the assigned amount will be initialized for users to claim/mint.
+This proof is basically a route to the address/balance pair in the merkle tree. 
 
 ## Usage
 
