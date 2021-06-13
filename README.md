@@ -7,6 +7,12 @@ Merkle proofs are a way to provide proof that a certain value is part of a set o
 More specifically, in the Merkle Drop, a Merkle Proof that a Ethereum address is included within the Merkle Root of the Merkle Drop Smart Contract needs to be 
 provided to the Merkle Drop Smart Contract in order for an Eligible Party to Claim its allocated token.
 
+## Implementation
+
+Given a file containing the mapping of addresses to balances, build a Merkle tree using merklejs. Fetch the merkle root and generate proof for each 
+set of address and balances for verification, which will initialise the balances for users to claim. This proof is basically a route to the 
+address/balance pair in the merkle tree. 
+
 ## Usage
 
 Step 1 - confirming if an Ethereum address is an Eligible Party Ethereum address: If the Ethereum address is an Eligible Party Ethereum address, 
