@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ERC20 - Merkle Drop</title>
+  </head>
+  <style>
+    input {
+      display: block;
+      margin-bottom: 12px;
+    }
+  </style>
+  <body>
+    <h1>ERC20 - Merkle Drop</h1>
+
+<label for="receiver">Address:</label>
+    
+<input
+  type="text"
+  id="receiver"
+  placeholder="e.g. 0x93e66d9baea28c17d9fc393b53e3fbdd76899dae"
+/>
+<button onclick="App.verifyAccount()">Verify</button>
+<button onclick="App.redeem()">Claim</button>
+<button onclick="App.balanceOf()">Check Balance</button>
+
+ 
+    <p id="status"></p>
+    <script src="index.js"></script>
+  </body>
+</html>
