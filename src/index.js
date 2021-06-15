@@ -661,11 +661,10 @@ const App = {
     if(!(tokenId in tokens))
     document.getElementById("status").innerHTML = "Not Eligible";
 
-    const proof = await merkletree.getHexProof(hashToken(tokenId, receiver))
-
     document.getElementById("status").innerHTML = "Initiating transaction... (please wait)";
     
     if(tokenId in tokens){
+    const proof = await merkletree.getHexProof(hashToken(tokenId, receiver));
     const { redeem } = this.meta.methods;
     await redeem(receiver, tokenId, proof).send({ from: this.account })
     .on('receipt',function(){
@@ -682,9 +681,9 @@ const App = {
     const tokenId = getKeyByValue(tokens,receiver)
     if(!(tokenId in tokens))
     document.getElementById("status").innerHTML = "Not Eligible";
-    const proof = await merkletree.getHexProof(hashToken(tokenId, receiver))
-
+    
     if(tokenId in tokens){
+    const proof = await merkletree.getHexProof(hashToken(tokenId, receiver));
     const { verifyAccount } = this.meta.methods;
     await verifyAccount(receiver, tokenId, proof).call().then(function(result){
       if(result == true){
